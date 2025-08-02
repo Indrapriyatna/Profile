@@ -1,0 +1,146 @@
+/* ======= Background Gradient ======= */
+.gradient-bg {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+/* ======= Profile Image Shadow ======= */
+.profile-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ======= Form Error & Success States ======= */
+.input-error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #10b981;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* ======= Hero Badge ======= */
+.hero-badge {
+  background-color: white;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* ======= About Section Tags ======= */
+.about-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* ======= Skill Cards ======= */
+.skill-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ======= Skill Tags ======= */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tags span {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+/* Tag Color Variants */
+.skill-tags.blue span {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.skill-tags.purple span {
+  background-color: #ede9fe;
+  color: #6b21a8;
+}
+
+.skill-tags.green span {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* ======= Contact Info Box ======= */
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.contact-item i {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+/* ======= Social Media Icons ======= */
+.social-icon {
+  padding: 0.75rem;
+  border-radius: 9999px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+/* ======= Form Input Fields ======= */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ======= Footer Hover Effects ======= */
+footer i {
+  transition: transform 0.3s;
+}
+
+footer a:hover i {
+  transform: scale(1.1);
+}
