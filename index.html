@@ -201,11 +201,14 @@
 
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="ce46e1a1-12de-405f-90a9-b557efde62e3">
-                        <input type="text" id="name" name="name" class="form-input mb-4" placeholder="Nama Lengkap">
-                        <input type="email" id="email" name="email" class="form-input mb-4" placeholder="Email">
-                        <input type="text" id="subject" name="subject" class="form-input mb-4" placeholder="Subjek">
+                        <input type="hidden" name="from_name" value="Website Profil Indra Priyatna">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+                        <input type="text" id="name" name="name" class="form-input mb-4" placeholder="Nama Lengkap" required>
+                        <input type="email" id="email" name="email" class="form-input mb-4" placeholder="Email" required>
+                        <input type="text" id="subject" name="subject" class="form-input mb-4" placeholder="Subjek" required>
                         <textarea id="message" name="message" rows="4" class="form-input mb-4"
-                            placeholder="Pesan Anda"></textarea>
+                            placeholder="Pesan Anda" required></textarea>
                         <button type="submit" class="gradient-bg text-white px-6 py-3 rounded-lg w-full">Kirim
                             Pesan</button>
                     </form>
