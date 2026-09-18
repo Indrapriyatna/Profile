@@ -1,12 +1,39 @@
+/* ======= Color system: midnight navy, teal, and warm gold ======= */
+:root {
+  --navy: #102a43;
+  --navy-deep: #071b2e;
+  --teal: #0f766e;
+  --teal-light: #14b8a6;
+  --sky: #38bdf8;
+  --gold: #fbbf24;
+  --mist: #f4f9fb;
+  --ink: #1f3548;
+}
+
+body {
+  background: var(--mist);
+  color: var(--ink);
+}
+
 /* ======= Background Gradient ======= */
 .gradient-bg {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  background: radial-gradient(circle at 85% 15%, rgba(56, 189, 248, 0.32), transparent 28%),
+    linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 48%, var(--teal) 100%);
+}
+
+header.gradient-bg {
+  background: rgba(7, 27, 46, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+header a:hover {
+  color: #7dd3fc;
 }
 
 /* ======= Profile Image Shadow ======= */
 .profile-shadow {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 22px 55px -16px rgba(1, 21, 38, 0.65),
+    0 0 0 12px rgba(251, 191, 36, 0.12);
 }
 
 /* ======= Form Error & Success States ======= */
@@ -28,11 +55,11 @@
 
 /* ======= Hero Badge ======= */
 .hero-badge {
-  background-color: white;
-  color: #2563eb;
+  background-color: #fffbeb;
+  color: #92400e;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(1, 21, 38, 0.22);
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -52,7 +79,15 @@
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #dbe9ee;
+  box-shadow: 0 12px 28px -20px rgba(15, 42, 67, 0.55);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #5eead4;
+  box-shadow: 0 20px 32px -18px rgba(15, 118, 110, 0.45);
 }
 
 /* ======= Skill Tags ======= */
@@ -71,18 +106,23 @@
 
 /* Tag Color Variants */
 .skill-tags.blue span {
-  background-color: #dbeafe;
-  color: #1e40af;
+  background-color: #e0f2fe;
+  color: #075985;
 }
 
 .skill-tags.purple span {
-  background-color: #ede9fe;
-  color: #6b21a8;
+  background-color: #fef3c7;
+  color: #92400e;
 }
 
 .skill-tags.green span {
-  background-color: #d1fae5;
-  color: #065f46;
+  background-color: #ccfbf1;
+  color: #115e59;
+}
+
+.skill-tags.database span {
+  background-color: #fef3c7;
+  color: #92400e;
 }
 
 /* ======= Contact Info Box ======= */
@@ -123,8 +163,8 @@
 }
 
 .form-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  border-color: var(--teal-light);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.22);
 }
 
 .input-error {
@@ -144,3 +184,29 @@ footer i {
 footer a:hover i {
   transform: scale(1.1);
 }
+
+/* ======= Tailwind color refinements ======= */
+#about { background: linear-gradient(180deg, #ffffff 0%, #f1f8f8 100%); }
+#skills { background: #edf6f7; }
+#contact { background: #ffffff; }
+
+#about .bg-gray-100 { background: #e8f4f4; border: 1px solid #cde4e3; }
+#about .text-gray-800, #skills .text-gray-800, #contact .text-gray-800 { color: var(--navy); }
+#about .text-gray-600, #skills .text-gray-600, #contact .text-gray-600 { color: #486277; }
+#about .text-gray-700, #contact .text-gray-700 { color: #29465b; }
+
+#about .bg-blue-100, #contact .bg-blue-100 { background-color: #dff6f4; }
+#about .text-blue-800, #contact .text-blue-600, #skills .text-blue-600 { color: #0f766e; }
+#about .bg-purple-100, #contact .bg-purple-100 { background-color: #fff3d3; }
+#about .text-purple-800, #contact .text-purple-600, #skills .text-purple-600 { color: #b45309; }
+#contact .bg-green-100 { background-color: #e0f2fe; }
+#contact .text-green-600, #skills .text-green-600 { color: #0284c7; }
+
+.gradient-bg a.bg-white {
+  color: #0f766e;
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.7);
+}
+
+footer { background: var(--navy-deep) !important; }
+footer .text-gray-400 { color: #b6d5dc; }
+footer .text-gray-500 { color: #7fa5ae; }
