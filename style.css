@@ -125,6 +125,21 @@ header a:hover {
   color: #92400e;
 }
 
+.skill-tags.office span {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.skill-tags.troubleshooting span {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+.skill-tags.maintenance span {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
 /* ======= Contact Info Box ======= */
 .contact-item {
   display: flex;
